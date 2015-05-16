@@ -1,0 +1,451 @@
+/* BACKGROUNDS */
+
+#bg-header {
+	background-image: url(../img/headerimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#bg-footer {
+	background-image: url(../img/footerimg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 0px;
+	width: 100%;
+	border-top: 3px solid #f21a2e;
+}
+
+
+/* BORDERS */
+
+.header-border {
+	border-bottom: 3px solid #fff;
+}
+
+.nav-border {
+	border-top: 3px solid #007fbd;
+	border-bottom: 3px solid #007fbd;
+}
+
+.content-border {
+	border-top: 3px solid #007fbd;
+	border-bottom: 3px solid #007fbd;
+}
+
+
+* {
+	-webkit-border-radius: 0px !important;
+	-moz-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+
+/* PADDING */
+
+.nav-padding {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.content-padding {
+	padding-top: 100px;
+	padding-bottom: 400px;
+}
+
+
+.footer-padding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.row-padding {
+	padding-top: 50px;
+}
+
+
+.carousel-padding {
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 10px;
+}
+
+
+/* STICKY NAV */
+
+.sticky-right {
+	height: auto;
+	width: 200px;
+	position: fixed;
+	top: 34%;
+	right: 0px;
+	background: #f00;
+	padding: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px !important;
+}
+
+.sticky-right > p{
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sticky-right > p > a{
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+.sticky-right > p > a:hover{
+	text-align: center;
+	text-decoration: none;
+	color: #ccc;
+}
+
+
+
+
+@media screen and(max-width: 767px) {
+	.sticky-right {
+		display: none;
+	}
+}
+
+
+/* SLIDER */
+
+
+#carousel_1 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_1 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_1 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_1 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_1 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+
+#carousel_2 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_2 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_2 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_2 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_2 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_3 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_3 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_3 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_3 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_3 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_4 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_4 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_4 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_4 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_4 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+
+#carousel_5 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_5 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_5 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_5 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_5 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_6 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_6 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_6 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_6 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_6 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_7 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_7 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_7 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_7 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_7 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_8 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_8 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_8 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_8 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_8 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+#carousel_9 .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#carousel_9 .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#carousel_9 .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#carousel_9 .controls li.active {
+    background-color:#eee;
+    border-top:3px solid #007fbd;
+}
+#carousel_9 .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
+
+
+#custom_carousel .item {
+
+    color:#000;
+    background-color:#eee;
+    padding:20px 0;
+}
+#custom_carousel .controls{
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding:0;
+    margin:0;
+    white-space: nowrap;
+    text-align: center;
+    position: relative;
+    background:#ddd
+}
+#custom_carousel .controls li {
+    display: table-cell;
+    width: 1%;
+    max-width:90px
+}
+#custom_carousel .controls li.active {
+    background-color:#eee;
+    border-top:3px solid orange;
+}
+#custom_carousel .controls a small {
+    overflow:hidden;
+    display:block;
+    font-size:10px;
+    margin-top:5px;
+    font-weight:bold
+}
