@@ -73,32 +73,35 @@
 
 /* STICKY NAV */
 
-.sticky-right {
+#sticky-right {
 	height: auto;
 	width: 200px;
 	position: fixed;
 	top: 34%;
 	right: 0px;
-	background: #f00;
+	
 	padding: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
 	border-radius: 15px !important;
+	
+	background: url("http://placehold.it/300/09f/fff.png") no-repeat top center;
+	background-size: cover;
 }
 
-.sticky-right > p{
+#sticky-right > p{
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 }
 
-.sticky-right > p > a{
+#sticky-right > p > a{
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 }
 
-.sticky-right > p > a:hover{
+#sticky-right > p > a:hover{
 	text-align: center;
 	text-decoration: none;
 	color: #ccc;
