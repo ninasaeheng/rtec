@@ -1,25 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <title>RT Edwards Commercial - Delongi</title>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+		<title>RT Edwards Commercial - Delongi</title>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-  
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<style>
+			h5 {
+				margin: 0px;
+				text-align: center;
+			}
+			.item-container {
+				background: #eee;
+				padding-top: 20px;
+				margin-bottom: 20px;
+			}
+			.hidden-item {
+				display: none;
+			}
+			
+			
+			#sticky-right{
+				display: none;
+			}
+			.expand-btn:link,
+			.expand-btn:hover,
+			.expand-btn:active,
+			.expand-btn:visited{
+				text-decoration: none;
+				background: #eee;
+				padding: 3px 12px;
+				-webkit-border-top-left-radius: 5px !important;
+				-webkit-border-top-right-radius: 5px !important;
+				-moz-border-radius-topleft: 5px !important;
+				-moz-border-radius-topright: 5px !important;
+				border-top-left-radius: 5px !important;
+				border-top-right-radius: 5px !important;
+			}
+		</style>
+	</head>
+	<body>
+	
 		<div class="fluid-container"> <!-- START CONTAINER -->
 		
 			<!-- HEADER -->
@@ -54,6 +87,7 @@
 					  <li role="presentation"><a href="#">SMEG</a></li>
 					  <li role="presentation"><a href="#">TECHNIKA</a></li>
 					  <li role="presentation" class="active"><a href="#">WESTINGHOUSE</a></li>
+					  <li role="presentation"><a href="#">CONTACT US</a></li>
 					</ul>
 				</div>
 			</div>
@@ -61,685 +95,107 @@
 						
 			<!-- CONTENT -->
 			<div class="row row-padding">	
-				<!-- TOP -->
 				<div class="container-fluid">
-					<div class="col-md-10">
-						<!-- TITLE -->
-						<div class="col-md-12">
-							<h2>
-								WESTINGHOUSE
-								<hr>
-							</h2>
-						</div>
-					
-						<!-- DESCRIPTION -->
-						<div class="col-md-12">
-							Westinghouse has been helping Australian families for over 60 years. We’ve always put our energy and thinking into great features that will actually be useful, not ‘bells and whistles’ that you just don’t need. That’s why our new cooking range 
-							is loaded with practical features... 
-							There’s a pause button on cooktops 
-							so dinner needn’t be ruined if there are interruptions, and cool touch doors that ensure a safe exterior on even the hottest oven. The steam assist oven offers a Steam Reheat function to help families get more mileage out of leftovers without compromising on taste, while the PyroClean ovens clean themselves without harsh chemicals, saving time and effort. Experience the incredible temperature control of induction cooking – it’s so clever, chocolate can be melted right in the pan with no double boiler required! They are cool to the touch, easy to keep clean and so responsive.
-							If you want a reliable brand with good solid appliances and features that will actually be used, choose Westinghouse.
-						</div>
+					<div class="col-md-9">
+						<h2 class="text-center">RT EDWARDS COMMERCIAL</h2>
+						<p> About / Info </p>
+					</div>
+					<div class="col-md-3">
+						<h3 class="text-center">Contact Us</h3>
+						<p>
+							<strong>Email:</strong> 
+							<br>commercialsales@rtedwards.com.au 
+							<br>
+							<br>
+							<strong>Address:</strong> 
+							<br>34 Borthwick Av
+							<br>Murarrie QLD 4172
+							<br>Australia
+							<br>
+							<br>
+							<strong>Ph:</strong> 
+							<br>07 3426 7500
+							<br>
+							<br>
+							<strong>Fax:</strong> 
+							<br>07 3426 7501
+							<br>
+						</p>
+						<p class="text-center">
+							OR <br><br>
+						</p>
+						<form class="form-horizontal">
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="fullName">Full Name</label>
+							  <div class="col-sm-9">
+								<input id="fullName" name="fullName" type="text" placeholder="" class="form-control" required="">
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="address">Address</label>
+							  <div class="col-sm-9">
+								<input id="address" name="address" type="text" placeholder="" class="form-control">
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="suburb">Suburb</label>
+							  <div class="col-sm-9">
+								<input id="suburb" name="suburb" type="text" placeholder="" class="form-control">
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="postcode">Postcode</label>
+							  <div class="col-sm-9">
+								<input id="postcode" name="postcode" type="number" placeholder="" class="form-control">
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="phone">Phone</label>
+							  <div class="col-sm-9">
+								<input id="phone" name="phone" type="text" placeholder="" class="form-control" required="">
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="email">Email</label>
+							  <div class="col-sm-9">
+								<input id="email" name="email" type="email" placeholder="" class="form-control" required="">
+							  </div>
+							</div>
+
+							<!-- Textarea -->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="enquiry">Enquiry</label>
+							  <div class="col-sm-9">                     
+								<textarea id="enquiry" class="form-control" name="enquiry"></textarea>
+							  </div>
+							</div>
+
+							<!-- Text input-->
+							<div class="form-group">
+							  <label class="col-sm-3 control-label" for="customerAccNumber">Customer Account Number</label>
+							  <div class="col-sm-9">
+								<input id="customerAccNumber" name="customerAccNumber" type="number" placeholder="" class="form-control">
+							  </div>
+							</div>
+							
+							<button type="submit" class="btn btn-default">Submit</button>
+								
+						</form>
+
 					</div>
 				</div>
-				
-				<!-- OVENS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								OVENS
-								<hr>
-							</h3>
-						</div>
-					
-						<div id="carousel_1" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_1" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_1" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_1" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_1" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END OVENS -->
-			
-				<!-- FREE STANDING COOKERS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								FREE STANDING COOKERS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_2" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_2" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_2" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_2" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_2" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END FREE STANDING COOKERS -->
-			
-				<!-- GAS COOKTOPS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								GAS COOKTOPS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_3" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_3" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_3" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_3" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_3" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END GAS COOKTOPS -->
-			
-				<!-- ELECTRIC COOKTOPS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								ELECTRIC COOKTOPS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_4" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_4" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_4" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_4" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_4" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END ELECTRIC COOKTOPS -->
-			
-				<!-- CANOPY RANGES -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								CANOPY RANGES
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_5" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_5" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_5" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_5" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_5" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END CANOPY RANGES -->
-			
-				<!-- RANGEHOODS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								RANGEHOODS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_6" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_6" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_6" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_6" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_6" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END RANGEHOODS -->
-			
-				<!-- DISHWASHERS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								DISHWASHERS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_7" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_7" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_7" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_7" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_7" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END DISHWASHERS -->
-			
-				<!-- WINE & CABINETS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								WINE & CABINETS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_8" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_8" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_8" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_8" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_8" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END WINE & CABINETS -->
-			
-				<!-- DISHWASHERS -->
-				<div class="container-fluid row-padding">
-					<div class="col-md-10 carousel-padding">
-						<div class="col-md-12">
-							<h3>
-								DISHWASHERS
-								<hr>
-							</h3>
-						</div>
-						<div id="carousel_9" class="carousel slide" data-ride="carousel" data-interval="2500">
-							<!-- Wrapper for slides -->
-							<div class="carousel-inner">
-								<div class="item active">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 1</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 2</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>            
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 4</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-								<div class="item">
-									<div class="container-fluid">
-										<div class="row">
-											<div class="col-md-3"><img src="http://placehold.it/350x250" class="img-responsive"></div>
-											<div class="col-md-9">
-												<h2>Slide 3</h2>
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, labore, magni illum nemo ipsum quod voluptates ab natus nulla possimus incidunt aut neque quaerat mollitia perspiciatis assumenda asperiores consequatur soluta.</p>
-											</div>
-										</div>
-									</div>           
-								</div> 
-							<!-- End Item -->
-							</div>
-							<!-- End Carousel Inner -->
-							<div class="controls">
-								<ul class="nav">
-									<li data-target="#carousel_9" data-slide-to="0" class="active"><a href="#"><img src="http://placehold.it/50x50"><small>Slide One</small></a></li>
-									<li data-target="#carousel_9" data-slide-to="1"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Two</small></a></li>
-									<li data-target="#carousel_9" data-slide-to="2"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Three</small></a></li>
-									<li data-target="#carousel_9" data-slide-to="3"><a href="#"><img src="http://placehold.it/50x50"><small>Slide Four</small></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- End Carousel -->
-					</div>	
-				</div>	
-				<!-- END DISHWASHERS -->
 			</div>
 			<!-- END CONTENT -->
 			
@@ -755,7 +211,7 @@
 			<!-- END FOOTER -->
 			
 			<!-- SECOND NAV -->
-			<div class="sticky-right hidden-xs hidden-sm">
+			<div class="hidden-xs hidden-sm" id="sticky-right">
 				<p><style>background: #;</style><a href="#">OVENS</a></p>
 				<p><style>background: #;</style><a href="#">FREE STANDING COOKERS</a></p>
 				<p><style>background: #;</style><a href="#">GAS COOKTOPS</a></p>
@@ -772,70 +228,25 @@
 			<!-- END SECOND NAV -->
 			
 		</div> <!-- END CONTAINER -->
-
-<script>
-
-	$(document).ready(function(ev){
-		$('#carousel_1').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_1 .controls .nav li.active').removeClass('active');
-		  $('#carousel_1 .controls .nav li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	
-	$(document).ready(function(ev){
-		$('#carousel_2').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_2 .controls li.active').removeClass('active');
-		  $('#carousel_2 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	
-	$(document).ready(function(ev){
-		$('#carousel_3').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_3 .controls li.active').removeClass('active');
-		  $('#carousel_3 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_4').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_4 .controls li.active').removeClass('active');
-		  $('#carousel_4 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_5').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_5 .controls li.active').removeClass('active');
-		  $('#carousel_5 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_6').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_6 .controls li.active').removeClass('active');
-		  $('#carousel_6 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_7').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_7 .controls li.active').removeClass('active');
-		  $('#carousel_7 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_8').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_8 .controls li.active').removeClass('active');
-		  $('#carousel_8 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_9').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_9 .controls li.active').removeClass('active');
-		  $('#carousel_9 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-
-</script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+			function expand(target) {
+				var hidden_item = $('#'+target+' .hidden-item');
+				if(hidden_item.css('display') == 'none') {
+					hidden_item.show();
+				} else {
+					hidden_item.hide();
+				}
+			}
+			$('.expand-btn').on('click', function() {
+				var status = $(this).find('span').hasClass('glyphicon-chevron-down');
+				if(status == true) {
+					$(this).html('VIEW LESS <span class="glyphicon glyphicon-chevron-up"></span>');
+				} else {
+					$(this).html('VIEW MORE <span class="glyphicon glyphicon-chevron-down"></span>');
+				}
+			});
+		</script>
+		
+	</body>
 </html>
