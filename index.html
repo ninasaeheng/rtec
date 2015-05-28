@@ -17,6 +17,9 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
   <body>
   
@@ -773,69 +776,30 @@
 			
 		</div> <!-- END CONTAINER -->
 
-<script>
-
-	$(document).ready(function(ev){
-		$('#carousel_1').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_1 .controls .nav li.active').removeClass('active');
-		  $('#carousel_1 .controls .nav li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	
-	$(document).ready(function(ev){
-		$('#carousel_2').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_2 .controls li.active').removeClass('active');
-		  $('#carousel_2 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	
-	$(document).ready(function(ev){
-		$('#carousel_3').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_3 .controls li.active').removeClass('active');
-		  $('#carousel_3 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_4').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_4 .controls li.active').removeClass('active');
-		  $('#carousel_4 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_5').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_5 .controls li.active').removeClass('active');
-		  $('#carousel_5 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_6').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_6 .controls li.active').removeClass('active');
-		  $('#carousel_6 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_7').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_7 .controls li.active').removeClass('active');
-		  $('#carousel_7 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_8').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_8 .controls li.active').removeClass('active');
-		  $('#carousel_8 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-	$(document).ready(function(ev){
-		$('#carousel_9').on('slide.bs.carousel', function (evt) {
-		  $('#carousel_9 .controls li.active').removeClass('active');
-		  $('#carousel_9 .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
-		})
-	});
-
-</script>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script>
+		$(document).ready(function() {
+			var carousel_count = 9;
+			var corousel_id = '';
+			var corousel_li_active = '';
+			var str_a = '';
+			var str_b = '';
+			
+			//creating selector
+			for(var i = 1; i <= carousel_count; i++) {
+				str_a = str_a + '#carousel_'+i+' .controls .nav li, ';
+				str_b = str_b + '#carousel_'+i+' .controls .nav li.active, ';
+			}
+			//truncate the last two characters
+			corousel_id = str_a.substr(0, str_a.length-2); 
+			corousel_li_active = str_b.substr(0, str_b.length-2);
+			
+			console.log(corousel_id);
+			$(corousel_id).on('click', function() {
+				$(corousel_li_active).removeClass('active');
+				$(this).addClass('active');
+			});	
+		});
+	</script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
