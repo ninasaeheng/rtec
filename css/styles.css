@@ -87,7 +87,9 @@
 	position: fixed;
 	top: 34%;
 	right: 0px;
-	background: #f21a2e;
+	background-image: url(../img/red-metal.png);
+	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
