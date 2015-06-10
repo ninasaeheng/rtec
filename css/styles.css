@@ -87,13 +87,14 @@
 	position: fixed;
 	top: 34%;
 	right: 0px;
-	background-image: url(../img/red-metal.png);
+	/*background-image: url('../img/red-metal.png');*/
+	background-color: #f21a2e;
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 15px;
 	-webkit-border-radius: 15px;
 	-moz-border-radius: 15px;
-	border-radius: 15px !important;
+	border-radius: 15px ;
 }
 
 #sticky-right > p{
@@ -128,3 +129,9 @@
 	border: 1px solid !important;
 }
 
+.nav > li > a {
+	min-width: 120px !important;
+  	text-align: center;
+	
+
+}
